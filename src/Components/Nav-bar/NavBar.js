@@ -3,6 +3,8 @@ import { Container } from 'react-bootstrap';
 import { Nav } from 'react-bootstrap';
 import { NavDropdown } from 'react-bootstrap';
 import './NavBar.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 
 const NavBar = () => {
     return (
@@ -23,6 +25,17 @@ const NavBar = () => {
         </NavDropdown>
       </Nav>
     </Navbar.Collapse>
+  </Container>
+  <Container>
+      <Navbar.Brand href="#">
+      <img class="cart"
+        src= "cart.png"
+        width="30"
+        height="30"
+        className="d-inline-block align-top"
+        alt="Cart logo"
+      />
+      </Navbar.Brand>
   </Container>
 </Navbar>
     )

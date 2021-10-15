@@ -1,25 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
 import NavBar from './Components/Nav-bar/NavBar';
+import FunctionalComponent  from './Components/functional-component/FunctionalComponent';
+import ClassComponent from './Components/Class-component/ClassComponent';
+import { Container } from 'react-bootstrap';
+import ItemListContainer from './Components/container/ItemListContainer';
 
 function App() {
+  const Hello = "Por venir";
+
   return (
     <div className="App">
       <NavBar />
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ItemListContainer greeting="Bienvenidos a mi tienda!"></ItemListContainer>
+      <FunctionalComponent Hello = {Hello}/>
+      <ClassComponent Hello = {Hello}/>
     </div>
   );
 }
